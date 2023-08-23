@@ -5,7 +5,7 @@
         </h2>
     </x-slot>
 
-    <div class="container mx-auto my-4">
+    <div class="container px-4 mx-auto my-4">
         <x-post.sessionMessage />
         <a href="{{ route('posts.create') }}"
             class="bg-gray-800 text-white px-4 py-2 rounded mb-3 inline-block hover:bg-gray-700">Add Post</a>
@@ -32,25 +32,24 @@
                         <td class="px-4 py-2">{{ Str::limit($post->content, 20) }}</td>
                         <td class="px-4 py-3">
                             <a href="{{ route('posts.show', $post->id) }}"
-                                class="inline-block px-3 py-1 text-md font-semibold  text-white transition duration-200 bg-blue-600 rounded-md hover:bg-blue-800">
+                                class="inline-block px-3 py-1 my-1 text-md font-semibold  text-white transition duration-200 bg-blue-600 rounded-md hover:bg-blue-800">
                                 Show
                             </a>
                             <a href="{{ route('posts.edit', $post->id) }}"
-                                class="inline-block px-3 py-1 text-md font-semibold  text-yellow-600 transition duration-200 bg-yellow-200 rounded-md hover:bg-yellow-300 ml-2">
+                                class="inline-block px-3 py-1 my-1 text-md font-semibold  text-yellow-600 transition duration-200 bg-yellow-200 rounded-md hover:bg-yellow-300 ml-2">
                                 Edit
                             </a>
-                            <form action="{{ route('posts.destroy', $post->id) }}" method="POST"
-                                class="inline-block">
+                            <form action="{{ route('posts.destroy', $post->id) }}" method="POST" class="inline-block">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit"
-                                    class="inline-block px-3 py-1 text-md font-semibold text-red-600 transition duration-200 bg-red-200 rounded-md hover:bg-red-300 ml-2"
+                                    class="inline-block px-3 py-1 my-1 text-md font-semibold text-red-600 transition duration-200 bg-red-200 rounded-md hover:bg-red-300 ml-2"
                                     onclick="return confirm('Are you sure you want to delete this post?')">
                                     Delete
                                 </button>
                             </form>
                         </td>
-                        
+
                     </tr>
                 @endforeach
             </tbody>
@@ -58,5 +57,5 @@
         <x-post.pagination :posts="$posts" />
     </div>
 
-    
+
 </x-app-layout>

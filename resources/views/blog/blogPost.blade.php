@@ -7,7 +7,7 @@
 
 
 
-    <div class="container mx-auto mt-4">
+    <div class="container mx-auto px-4 mt-4">
         <form action="{{ route('post.search') }}" method="GET" class="mb-4">
             <input type="text" name="search" placeholder="Search by title..."
                 class="border border-gray-300 px-3 py-1 rounded-md focus:outline-none focus:border-blue-500">
