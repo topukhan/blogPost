@@ -1,4 +1,4 @@
-# Simple Blog Post CRUD Application
+# Social Media Blog Post CRUD Application
 
 This is a simple mini project that demonstrates a blog post CRUD application with user-post one-to-many relationship and search functionality.
 
