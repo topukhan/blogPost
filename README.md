@@ -1,6 +1,6 @@
 # Social Media Blog Post CRUD Application
 
-This is a simple mini project that demonstrates a blog post CRUD application with user-post one-to-many relationship and search functionality.
+This is a mini project that demonstrates a blog post CRUD application with user-post one-to-many relationship and search functionality.
 
 ## Key Features
 
@@ -35,7 +35,7 @@ This is a simple mini project that demonstrates a blog post CRUD application wit
 
 ## Credits
 
-This project is based on the concepts of Laravel, Tailwind CSS, and basic CRUD operations. It was created for learning purposes and demonstrates fundamental concepts in web development.
+This project is based on the concepts of Laravel, Tailwind CSS, and basic CRUD operations. It was created for demonstrates fundamental concepts in web development.
 
 ## License
 
